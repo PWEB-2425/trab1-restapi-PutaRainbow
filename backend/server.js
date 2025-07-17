@@ -15,14 +15,6 @@ const PORT = process.env.PORT || 3000; // Mova para cima
 app.use(cors());
 app.use(express.json());
 
-// Configuração correta para o frontend (supondo estrutura de pastas)
-app.use(express.static(path.join(__dirname, '../frontend')));
-
-// Rota principal - sirva o frontend
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
-});
-
 // Rotas da API
 app.use('/api/alunos', alunoRoutes);
 app.use('/api/cursos', cursoRoutes);
