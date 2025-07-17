@@ -1,6 +1,6 @@
 // URLs das APIs
-const ALUNOS_API_URL = 'http://localhost:3000/api/alunos';
-const CURSOS_API_URL = 'http://localhost:3000/api/cursos';
+const ALUNOS_API_URL = 'https://trab1-restapi-putarainbow-1.onrender.com/api/alunos';
+const CURSOS_API_URL = 'https://trab1-restapi-putarainbow-1.onrender.com/api/cursos';
 
 // Referências ao DOM
 const alunosTableBody = document.getElementById('alunosTableBody');
